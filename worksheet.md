@@ -64,7 +64,7 @@ def get_sense_data():
     gyro_x,gyro_y,gyro_z = sense.get_gyroscope_raw().values()
     sense_data.extend([gyro_x,gyro_y,gyro_z])
 
-    sense_data.append(datetime.now())
+    sense_data.append(datetime.datetime.now())
 
     return sense_data
     ```
